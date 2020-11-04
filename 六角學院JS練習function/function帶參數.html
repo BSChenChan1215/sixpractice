@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- function跑完就會銷毀資料,所以要用return先丟出去才會跑出值 -->
+
+<body>
+    <script>
+        function count(number) {
+            var result = number * 10;
+            // console.log(result);
+            return result;
+        }
+        count(10);
+        console.log(count(10));
+    </script>
+</body>
+
+</html>

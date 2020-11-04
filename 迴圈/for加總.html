@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var chickTotal = 0;
+        var farms = [{
+            farmer: "卡式博",
+            field: 6,
+            chick: 200
+        }, {
+            farmer: "查理",
+            field: 6,
+            chick: 20
+        }, {
+            farmer: "小橋",
+            field: 10,
+            chick: 120
+        }]
+        var farmsTotal = farms.length;
+        for (var i = 0; i < farms.length; i++) {
+            chickTotal = chickTotal + farms[i].chick;
+        }
+        console.log(chickTotal);
+        //注意優先權問題
+    </script>
+</body>
+
+</html>

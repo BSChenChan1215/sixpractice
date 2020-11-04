@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var farms = [{
+            farmer: "卡式博",
+            field: 6,
+            chick: 200
+        }, {
+            farmer: "查理",
+            field: 6,
+            chick: 20
+        }, {
+            farmer: "小橋",
+            field: 10,
+            chick: 120
+        }]
+
+        for (var i = 0; i < farms.length; i++) {
+            if (farms[i].chick > 100) {
+                console.log("第" + (i + 1) + "個農場超過100隻雞");
+            }
+        }
+    </script>
+</body>
+
+</html>

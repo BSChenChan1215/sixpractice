@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+    <script>
+        var country = [{
+            farmer: 'ALEX'
+        }];
+
+        var countryString = JSON.stringify(country);
+        localStorage.setItem('countryItem', countryString);
+
+        let getData = localStorage.getItem('countryItem');
+        alert(getData);
+        console.log(123);
+        let getDataAry = JSON.parse(localStorage.getItem('countryItem'));
+
+        //陣列
+    </script>
+
+</body>
+
+</html>
